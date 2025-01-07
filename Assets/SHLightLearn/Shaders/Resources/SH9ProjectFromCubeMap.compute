@@ -24,6 +24,7 @@ groupshared float4 shcGroup[THREAD_X * THREAD_Y * SH_DEGREE * SH_DEGREE];
 
 static float4 SampleCube(float theta,float phi){
     float3 dir = UnitDirFromThetaPhi(theta,phi);
+    dir = dir.xzy; // 保证跟unity一致
     float4 color = CubeMap.SampleLevel(PointClampSampler,dir,1);
     
     return color;
