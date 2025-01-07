@@ -124,7 +124,7 @@
                 // return SH9_NorOK(normalWS);//ok
                 // return SH9_Unity(normalWS); // ok
                 //return SH9_Unity_Debug_OK(normalWS); // ok
-                return SampleSH9(normalWS.xzy); // ok
+                return SampleSH9(normalWS); // ok
                 // return SampleSH(normalWS); // ok             
             }
             ENDCG
